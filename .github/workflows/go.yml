@@ -19,7 +19,7 @@ jobs:
           release_name: notify ${{ github.ref }}
           draft: false
           prerelease: false
-  linuxbuild:
+  linux-build:
     name: build notify
     needs: release
     runs-on: ubuntu-latest
@@ -34,7 +34,7 @@ jobs:
       - name: build linux version
         run: go build -o notify -v ./...
       - name: package
-        run: tar -zcvf notify_linux.tgz gocapture_linux static templates GeoLite2-City.mmdb
+        run: tar -zcvf notify_linux.tgz notify_linux etc/
       - name: upload
         uses: actions/upload-release-asset@v1
         env:
@@ -43,27 +43,4 @@ jobs:
           upload_url: ${{ needs.release.outputs.upload_url }}
           asset_path: notify_linux.tgz
           asset_name: notify_linux.tgz
-          asset_content_type: application/gzip
-
-  windowsbuild:
-    runs-on: windows-latest
-    needs: release
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.19
-      - name: build windows version
-        run: go build -v -o notify_windows.exe ./...
-      - name: package
-        run: tar -zcvf notify_windows.tgz notify_windows.exe static templates GeoLite2-City.mmdb
-      - name: upload
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ needs.release.outputs.upload_url }}
-          asset_path: notify_windows.tgz
-          asset_name: notify_windows.tgz
           asset_content_type: application/gzip
