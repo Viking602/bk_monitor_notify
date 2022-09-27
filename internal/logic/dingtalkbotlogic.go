@@ -52,7 +52,7 @@ func (l *DingTalkBotLogic) DingTalkBot(req *types.BKCallBack) error {
 		anomalyMsg = req.LatestAnomalyRecord.OriginAlarm.Anomaly.Field2.AnomalyMessage
 	} else if req.LatestAnomalyRecord.OriginAlarm.Anomaly.Field3.AnomalyMessage != "" {
 		// 告警等级为3=提醒则为黄色
-		tempColor = "FFFF00"
+		tempColor = "FCDB03"
 		anomalyMsg = req.LatestAnomalyRecord.OriginAlarm.Anomaly.Field3.AnomalyMessage
 	}
 
