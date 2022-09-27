@@ -71,11 +71,10 @@ http://127.0.0.1:8887/api/notify/dingTalkBot?key=asdadfqwe123as123&secret=test12
 
 钉钉展示效果:
 
-<img alt="img_7.png" height="60%" src="image/img_7.png" width="60%"/>
-
-<img alt="img_8.png" height="60%" src="image/img_8.png" width="60%"/>
-<img alt="img_4.png" height="60%" src="image/img_4.png" width="60%"/>
-<img alt="img_6.png" height="60%" src="image/img_6.png" width="60%"/>
+<img alt="img_7.png" height="60%" src="image/img_7.png" width="40%"/>
+<img alt="img_8.png" height="60%" src="image/img_8.png" width="40%"/>
+<img alt="img_4.png" height="60%" src="image/img_4.png" width="40%"/>
+<img alt="img_6.png" height="60%" src="image/img_6.png" width="40%"/>
 
 ## 3. config文件
 
