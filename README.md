@@ -89,3 +89,8 @@ BkUrl:  # 平台链接用于展示
 
 ![screenshot-20220927-114456.png](image/screenshot-20220927-114456.png)
 
+## 5. 启动方法
+
+```bash
+./notify -f etc/notify.yaml
+```
