@@ -32,7 +32,7 @@ jobs:
         with:
           go-version: 1.19
       - name: build linux version
-        run: go build -o notify -v ./...
+        run: go build -o notify
       - name: package
         run: tar -zcvf notify_linux.tgz notify_linux etc/
       - name: upload
