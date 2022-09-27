@@ -21,11 +21,11 @@ http://127.0.0.1:8887/api/notify/larkBot?key={飞书机器人key}&secret={签名
 添加机器人后选择签名校验
 
 飞书机器人key为webhook最后的一串uuid
-![img.png](image/img.png)
+<img alt="img.png" height="60%" src="image/img.png" width="70%"/>
 
 飞书机器人secret为签名校验的secret
 
-![img_1.png](image/img_1.png)
+<img alt="img_1.png" height="60%" src="image/img_1.png" width="60%"/>
 
 注意：默认会在告警时间加8小时如不需要添加则添加参数
 &timeLocal=0
@@ -42,10 +42,10 @@ http://127.0.0.1:8887/api/notify/larkBot?key=06ddbd05-bc87-4c28-8230-6d0406ac3c6
 
 飞书机器人效果:
 
-![img_9.png](image/img_9.png)
-![img_5.png](image/img_5.png)
-![img_10.png](image/img_10.png)
-![img_11.png](image/img_12.png)
+<img alt="img_9.png" src="image/img_9.png" width="60%" height="60%"/>
+<img alt="img_5.png" height="50%" src="image/img_5.png" width="60%"/>
+<img alt="img_10.png" height="50%" src="image/img_10.png" width="60%"/>
+<img alt="img_11.png" height="50%" src="image/img_12.png" width="60%"/>
 
 ### 钉钉机器人:
 
@@ -53,9 +53,9 @@ http://127.0.0.1:8887/api/notify/larkBot?key=06ddbd05-bc87-4c28-8230-6d0406ac3c6
 
 获取机器人webhook地址拿到最后的token
 链接示意https://oapi.dingtalk.com/robot/send?access_token=5165f0fb126694c6a15770c8029*********************f129e22
-![img_2.png](image/img_2.png)
+<img alt="img_2.png" height="60%" src="image/img_2.png" width="60%"/>
 安全设置选择加签验证
-![img_3.png](image/img_3.png)
+<img alt="img_3.png" height="60%" src="image/img_3.png" width="60%"/>
 
 钉钉地址:
 
@@ -71,10 +71,11 @@ http://127.0.0.1:8887/api/notify/dingTalkBot?key=asdadfqwe123as123&secret=test12
 
 钉钉展示效果:
 
-![img_7.png](image/img_7.png)
-![img_8.png](image/img_8.png)
-![img_4.png](image/img_4.png)
-![img_6.png](image/img_6.png)
+<img alt="img_7.png" height="60%" src="image/img_7.png" width="60%"/>
+
+<img alt="img_8.png" height="60%" src="image/img_8.png" width="60%"/>
+<img alt="img_4.png" height="60%" src="image/img_4.png" width="60%"/>
+<img alt="img_6.png" height="60%" src="image/img_6.png" width="60%"/>
 
 ## 3. config文件
 
@@ -87,7 +88,7 @@ BkUrl:  # 平台链接用于展示
 
 ## 4. 蓝鲸配置方法
 
-![screenshot-20220927-114456.png](image/screenshot-20220927-114456.png)
+<img alt="screenshot-20220927-114456.png" src="image/screenshot-20220927-114456.png"/>
 
 ## 5. 启动方法
 
