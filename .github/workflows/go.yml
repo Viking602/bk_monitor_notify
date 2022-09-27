@@ -34,7 +34,7 @@ jobs:
       - name: build linux version
         run: go build -o notify
       - name: package
-        run: tar -zcvf notify.tgz notify_linux etc/
+        run: tar -zcvf notify_linux_amd64.tgz notify etc/
       - name: upload
         uses: actions/upload-release-asset@v1
         env:
