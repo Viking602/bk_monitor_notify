@@ -4,7 +4,7 @@
 
 本项目用于蓝鲸告警配置回调通知
 
-开发框架为:[go-zero](https://go-zero.dev/cn/)
+开发框架:[go-zero](https://go-zero.dev/cn/)
 
 当前支持： 钉钉机器人 、飞书机器人
 
@@ -93,4 +93,10 @@ BkUrl:  # 平台链接用于展示
 
 ```bash
 ./notify -f etc/notify.yaml
+```
+
+## 6. Docker启动
+    
+```bash
+docker run -d -p 8887:8887 --name bk-notify -e BK_URL=http://paas.xxx.com viking602/bk-notify:latest
 ```
